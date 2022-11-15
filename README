@@ -1,0 +1,35 @@
+  684  cd gitdemo/
+  685  ls
+  686  git init
+  687  vi file1 file2 file3
+  688  git add file1 file2
+  689  git status
+  690  git commit -m"initial version of file1 and file2"
+  691  vi file1
+  692  git status
+  693  git add file1
+  694  git commit -m "tweek to file1"
+  695  git status
+  696  git checkout -b "new feature"
+  697  vi file2 file3
+  698  git add .
+  699  git status
+  700  git commit -m "changes to file2 and file3"
+  701  git checkout master
+  702  git status
+  703  git checkout "new feature"
+  704  git checkout -b "new feature"
+  705  git checkout -b "new-feature"
+  706  git status
+  707  git checkout -b "extended"
+  708  git branch
+  709  vi file3
+  710  git checkout master
+  711  git checkout extended
+  712  git add file3
+  713  git commit -m "more file3 chages"
+  714  git checkout master
+  715  git merge extended
+  716  pwd
+  717  vi README
+  718  h > README
